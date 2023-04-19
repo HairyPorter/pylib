@@ -1,5 +1,5 @@
 import pdfplumber
-path = "200707-1.pdf"
+path = r"pdfplumber_test/200707-1.pdf"
 data=[]
 datadictlist=[]
 with pdfplumber.open(path) as pdf:
@@ -21,8 +21,8 @@ with pdfplumber.open(path) as pdf:
                     data.append(tablerow)
                     print(tablerow)
 
-
-# print("data=\n",data)
+print("-"*6,"data","-"*6)
+print("data=\n",data)
 
 
 
