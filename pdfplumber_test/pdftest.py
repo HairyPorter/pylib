@@ -14,7 +14,6 @@ with pdfplumber.open(path) as pdf:
             print('\n')
             for tablerow in pagetable:
                 # 表格中的一行
-                datadict={}
                 if(tablerow[0].find('Contents')>0):
 
 
