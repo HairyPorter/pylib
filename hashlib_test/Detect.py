@@ -75,6 +75,7 @@ else:
     for n in mw_nodes_dict_list:
         print(str(n).replace(',',',\n'))
     
+print('-'*10,"检测结束",'-'*10)
 time_end=time.time()
 print('检测时间',time_end-time_start,'s')
 input('按Enter键退出')
