@@ -1,7 +1,10 @@
-
 import os
 from py2neo import Graph,Node,Relationship,NodeMatcher,RelationshipMatcher
 import hashlib
+import time
+
+time_start=time.time()
+
 check_root=os.getcwd()
 print("检测目录：\t",check_root)
 allfiles=[]
@@ -71,6 +74,9 @@ else:
     print('发现',len(mw_nodes_dict_list),'个疑似恶意代码')
     for n in mw_nodes_dict_list:
         print(str(n).replace(',',',\n'))
+    
+    time_end=time.time()
+    print('检测时间',time_end-time_start,'s')
 
 
 
