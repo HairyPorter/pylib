@@ -1,4 +1,9 @@
 *.exe
+# latex_ignore
+*.bib
+*.bbl
+*.xml
+*.synctex.gz
 
 
 __pycache__/
